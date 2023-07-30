@@ -105,8 +105,15 @@ let gems = ['Topaz', 'Citrine', 'Diamond', 'Emerald', 'Iolite', 'Tanzanite'];
 
 // 5.a (STRETCH) TODO: Replace the second gem with 'Tourmaline'
 //      Console log the updated array.
-let gems[1] = 'Tourmaline';
-console.log(gems);
+let gemToRemove = 'Citrine'
+let index = gems.intexof(gemToRemove);
+
+if (index !== -1) {
+  gems.splice(index, 1, 'Tourmaline');
+}
+
+//push.gems[1] = 'Tourmaline';
+//console.log(gems);
 
 // 5.b (STRETCH) TODO: Sort your gems array
 //     in reverse alphabetical order.
